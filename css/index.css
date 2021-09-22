@@ -1,0 +1,154 @@
+/*layout*/
+
+.logo { grid-area: logo;}
+.navbar{grid-area: menu;}
+
+.title {
+
+  padding: 10px;
+   background-image: url("../bilder/panorama-of-a-blue-sky-free-photo.jpg");
+
+   text-align: center;
+
+   background-attachment: fixed;
+
+}
+
+.h1 { /*background-color:rgba(192, 192, 192, 0.671);
+max-width: fit-content;*/
+text-align: center;}
+
+p{
+  max-width: fit-content;
+}
+
+.lenker { grid-area: links; }
+.info { grid-area: main;
+
+}
+.bilder { grid-area: left; }
+.prosjekter { grid-area: section;}
+.footer { grid-area: footer; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo menu menu menu menu'
+    'title title title title title'
+    'left main main main links'
+    'section section section section section'
+    'footer footer footer footer footer';
+  grid-gap:5px;
+  background-color: #00000088;
+  padding: 10px;
+  grid-template-columns: auto;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  min-width: 250px;
+  
+  font-size: 25px;
+
+}
+
+/*responsive*/
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  /*#primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;} */ 
+
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'logo menu'
+        'title title'
+        'main main'
+        'left links'
+        'section section'
+        'footer footer';
+      grid-gap:5px;
+      background-color: #00000088;
+      padding: 10px;
+      grid-template-columns: auto;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      min-width: 250px;
+      
+      font-size: 25px;
+    
+    }
+
+  }
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+
+/*navigation bar*/
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-height: fit-content;
+}
+
+@media only screen and (max-width: 730px){
+.navbar{
+  flex-wrap: wrap;
+}
+}
+
+.navbar a {
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 1;
+  list-style-type: none;
+  
+  display: flex;
+  align-items:left;
+}
+
+.navbar .logo {
+
+  display: block;
+  color: #e7e7e7;
+  padding: 10px 24px;
+  font-size: 24px;
+}
+
+.navbar ul li a {
+  color: #e7e7e7;
+  min-height: 37px;
+  background-color: #333333;
+  padding: 24px;
+  display: block;
+}
+
+
+.navbar ul a:hover,
+.navbar ul a:focus {
+  background-color: #272727;
+}

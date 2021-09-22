@@ -1,0 +1,133 @@
+
+/*
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  */
+
+  /*layout*/
+
+  /*
+.logo { grid-area: logo;}
+.navbar{grid-area: menu;}
+*/
+
+.title {grid-template: heading1;}
+.bilde1 {grid-template: bilde1;}
+.video1 {grid-template: video;}
+.bilde2 {grid-template: bilde2;}
+.text1 {grid-template: text;
+
+}
+
+/* Create three equal columns that floats next to each other 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+ Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+
+.row {
+
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:1000px) {
+  .column {
+    width: 100%;
+  }
+  .row{
+    grid-auto-flow: row;
+  }
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'bilde1 video bilde2'
+    '🎞 🎞 🎞'
+    'text text text'
+    '';
+  grid-gap:5px;
+  background-color: #00000088;
+  padding: 10px;
+  grid-template-columns: subgrid;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  min-width: 250px;
+  background-color: rgb(24 24 24);
+  font-size: 25px;
+
+}
+
+
+p{
+  
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size:15px;
+  padding: 35px;
+  
+}
+
+.column {
+
+  object-position: center;
+  object-fit: contain
+
+}
+
+.🎞 { grid-template: 🎞;
+
+background-image: url(./bilder/FullWide.jfif);
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: center;
+
+}
+
+
+.heading1{
+
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+background-image: url(./video_&_bilder/head.jfif);
+background-attachment: fixed;
+
+}
