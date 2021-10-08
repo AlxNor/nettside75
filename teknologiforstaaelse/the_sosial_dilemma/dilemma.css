@@ -1,56 +1,22 @@
 
-/*
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-  
-  */
 
-  /*layout*/
-
-  /*
-.logo { grid-area: logo;}
-.navbar{grid-area: menu;}
-*/
-
+body {
+  margin: 0;
+}
 .title {grid-template: heading1;}
 .bilde1 {grid-template: bilde1;}
 .video1 {grid-template: video;}
 .bilde2 {grid-template: bilde2;}
 .text1 {grid-template: text;
-
+padding:10px;
 }
 
-/* Create three equal columns that floats next to each other 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
 
- Clear floats after the columns 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
 
 
 .row {
-
+padding-bottom: 10px;
   display: grid;
   grid-auto-flow: column;
 }
@@ -75,7 +41,9 @@
     'bilde1 video bilde2'
     '🎞 🎞 🎞'
     'text text text'
-    '';
+    '🎞 🎞 🎞'
+    'text text text'
+    'text text text';
   grid-gap:5px;
   background-color: #00000088;
   padding: 10px;
@@ -113,13 +81,22 @@ p{
 
 .🎞 { grid-template: 🎞;
 
-background-image: url(./bilder/FullWide.jfif);
-background-attachment: fixed;
-background-repeat: repeat;
-background-position: center;
+  background-image: url(./Bilder/1920x1080_sosiale-medier-1.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  
+  }
 
-}
+  .🎞2 { grid-template: 🎞2;
 
+    background-image: url(./Bilder/1920x1080_sosiale-medier-1.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    
+    }
+      
 
 .heading1{
 
@@ -127,7 +104,7 @@ background-position: center;
   color: rgb(255, 255, 255);
   text-align: center;
   
-background-image: url(./video_&_bilder/head.jfif);
+background-image: url(./Bilder/head.jfif);
 background-attachment: fixed;
 
 }

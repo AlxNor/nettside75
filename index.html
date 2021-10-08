@@ -6,8 +6,8 @@
 <head>
 
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
 
     <link rel="stylesheet" type="text/css" href="./css/index.css"/>
 
@@ -16,34 +16,47 @@
 </head>
 
 
-<body>  
+<body class="body">  
 
-  <nav class="navbar">
-
-    <a class="logo" href="/index.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/250px-McDonald%27s_Golden_Arches.svg.png" alt="logo" width="50"> </a>
-
-    <ul>
-      <li>
-        <a href="./teknologiforstaaelse/teknologiforsaaelse.html">Teknologiforståelse</a>
-      </li>
-      <li>
-        <a href="./produksjon/produksjon_og_historiefortelling.html">Prod. og historiefortelling</a>
-      </li>
-      <li>
-        <a href="./programering/programering.html">Konseptutvikling og programering</a>
-      </li>
-      <li>
-        <a href="">Matematikk</a>
-      </li>
-      <li>
-        <a href="">Naturfag</a>
-      </li>
-      <li>
-        <a href="">Fag</a>
-      </li>
-    </ul>
-
-  </nav>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+  
+  <div class="topnav" id="myTopnav">
+    <a class="logo" href="/index.html"> <img src="./bilder/an_logo.png" alt="logo" width="50"> </a>
+    <a href="./teknologiforstaaelse/teknologiforstaaelse.html">Teknologiforståelse</a>
+    <a href="./produksjon/produksjon_og_historiefortelling.html">Prod. & historiefortelling</a>
+    <a href="./programering/programering.html">Konseptutvikling & programering</a>
+    <a href="./matematikk/matematikk.html">Matematikk</a>
+    <a href="./naturfag/naturfag.html">Naturfag</a>
+    <a href="./engelsk/engelsk.html">Engelsk</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Lenker
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://developer.mozilla.org/en-US/">Mozilla</a>
+        <a href="https://www.w3schools.com/">W3schools</a>
+        <a href="https://github.com/AlxNor">Github</a>
+      </div>
+      </div> 
+  </div>
+  
+  
 
   <br>
 
@@ -53,47 +66,55 @@
     
   </div>
 
-    <br>
+    
 
     <div class="grid-container">
       
-        <div class="lenker">Lenker
-          <ul>
-          <li>
-            <a href="https://developer.mozilla.org/en-US/">Mozilla</a>
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/">W3schools</a>
-          </li>
-        </div>
         <div class="info"> <h2>Litt om meg</h2>
           <p>
 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo maxime vero consectetur sequi ratione nesciunt!
-
+            Jeg heter Andreas og er 16 år. Jeg går på Amalie Skram vidregående skole på linjen "Informasjonsteknologi og medieproduksjon".
+            Hobbyene mine er å programere, å spille video spill og å spille gitar. Og dette er stededt der jeg kommer  til å legge ut alle prosjektene jeg har i de programfagene jeg har, og kansje noen av fellesfagene
           </p>
 
         </div>  
 
-        <div class="bilder">Bilder</div>
-        <div class="prosjekter">Prosjekter
+        <div class="bilder"><img src="./bilder/20201003-DSC_4073.jpg" alt="Meg" width="175px"></div>
+        <div class="bilder2"><img src="./bilder/kode.PNG" alt="|Kode" width="200px"></div>
+
+        <div class="prosjekter">
+          
+          <h3 class="h2">Prosjekter</h3> 
+          <div class="pimg1">
+          <a class="pimg1" href="./teknologiforstaaelse/the_sosial_dilemma/dilemma.html">
+            <img class="pimg1" src="./bilder/dilemma.PNG"  alt="" width=""></a>
+            <p>"The sosial dilemma" er en film som handler om hvordan sosiale medier kontrolerer oss i hverdagen. I dette prosjektet skriver jeg litt om hvorden dette ikke er bra og hvordan jeg syntes at det bør endres</p>
+        </div>
+          <div class="pimg2">
+            <img class="pimg2" src="" alt="" width="auto">
+          </div>
+          <div class="pimg3">
+            <img class="pimg3" src="" alt="" width="auto">
+          </div>
+            
+        </div>
+        
+        <div class="footer">
+          
+          
+
           <br>
-<img src="" alt="">
-<img src="./teknologiforstaaelse/the_sosial_dilemma/Bilder/head.jfif" alt="">
+
+          <p class="footer_text">e-mail  <br><br> <a class="footer_text" href="mailto:e-andnor12@asvg.no">e-andnor12@asvg.no</a> </p>
 
         </div>
-        <div class="footer">Footer</div>
+
+        
       
       </div>
 
-      <br>
-
-    <footer>
-
-        <!---footer--->
-
-    </footer>
     
+
 </body>
 
 
